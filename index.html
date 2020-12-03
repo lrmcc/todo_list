@@ -14,18 +14,15 @@
     </header>
     
     <div class="todoItemForm">
-        <form action="">
-        <label for="todoItemTextBox">Enter a To-Do Item:</label>
-        <input type="text" id="todoItemTextBox" name="todoItemTextBox">
-        <button type="button" class="submitTodoItemButton" onclick="getTodoItem()">Submit</button>
-        <button class="clearTodoListButton" type="button" onclick="clearTodoList()">Clear List</button>
-        <br><br>
-        </form>
+        <label class="todoItemTextLabel" for="todoItemTextBox" >TODO:</label>
+        <input type="text" id="todoItemTextBox" onfocus="this.value=''" value="Enter an item here" onkeypress="submitWithReturn(event)">
+        <input type="submit" class="submitTodoItemButton" onclick="getTodoItem();document.getElementById('todoItemTextBox').value = '';">
     </div>
     <div class="todoListEntries">
-        <p>Items:</p>
+        <h3>Items:</h3><hr><hr>
         <ul id="todoItemList">
         </ul>
+        <button class="clearTodoListButton" type="button" onclick="clearTodoList()">Clear List</button>
     </div>
     
         

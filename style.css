@@ -8,6 +8,7 @@ html,body {
 .title{
     background-color: bisque;
     font-family: Georgia, serif;
+    font-size: xx-large;
 }    
 body{
     background-color: #34eb9e;
@@ -16,12 +17,15 @@ body{
 .todoItemForm{
     background-color: cadetblue;
 }
+.todoItemTextLabel{
+    font-family: Georgia, serif;
+    font-size: x-large;
+}
 .todoListEntries{
-    background-color: cornflowerblue;
-    margin-left: 25%;
+    background-color: #f5db67;
+    margin-left: 40%;
     margin-right: 40%;
-    width: 50%;
-    height: 50%;
+    padding-top: 10px;
 }
 ul{
     list-style-type: circle;
@@ -38,8 +42,9 @@ button{
     border-radius: 1px;
   }
 
-.clearTodoItem{
+.clearTodoItemFromListButton{
     background: rgb(255, 1, 1);
+    float: right;
   }
 
 .submitTodoItemButton{
