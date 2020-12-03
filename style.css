@@ -33,20 +33,32 @@ ul{
   }
 
 button{
-     color: white;
+    color: white;
     border-radius: 4px;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
 }
-.clearTodoListButton{
-    background: rgb(202, 60, 60);
-    border-radius: 1px;
+
+.submitTodoItemButton{
+    background: rgb(66, 184, 221);
+    color: white;
   }
 
 .clearTodoItemFromListButton{
     background: rgb(255, 1, 1);
     float: right;
   }
+.todoListItemDoneButton{
+    background: #9090a3;
+    float: right;
+}
+.exportTodoListButton{
+    background: #8986d9;
+    margin-bottom: 5%;
+}
 
-.submitTodoItemButton{
-    background: rgb(66, 184, 221);
+.clearTodoListButton{
+    background: rgb(202, 60, 60);
+    margin-top: 5%;
+    margin-bottom: 5%;
   }
+
