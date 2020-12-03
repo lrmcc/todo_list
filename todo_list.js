@@ -1,7 +1,7 @@
 let entryCount = 1;
 let entries = [];
-let done = "<button type='button' class='todoListItemDoneButton' id=" + entryCount +" onclick='todoListItemDone(" + entryCount + ")'>Done</button>"
-let clearItem = "<button type='button' class='clearTodoItemFromListButton' id=" + entryCount +" onclick='clearTodoItemFromList(" + entryCount + ")'>x</button>";
+let done = "<button type='button' class='todo-list-item-done-button' id=" + entryCount +" onclick='todoListItemDone(" + entryCount + ")'>Done</button>"
+let clearItem = "<button type='button' class='clear-todo-item-from-list-button' id=" + entryCount +" onclick='clearTodoItemFromList(" + entryCount + ")'>x</button>";
 
 function submitWithReturn(event) {
     if (event.keyCode === 13) {

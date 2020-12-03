@@ -9,54 +9,89 @@ html,body {
     background-color: bisque;
     font-family: Georgia, serif;
     font-size: xx-large;
+    font-family: 'Reenie Beanie', cursive;
+    border-color: red;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 30%;
+    margin-left: 25%;
+    margin-right: 25%;
 }    
 body{
     background-color: #34eb9e;
     text-align: center;
 }
-.todoItemForm{
-    background-color: cadetblue;
-}
-.todoItemTextLabel{
-    font-family: Georgia, serif;
-    font-size: x-large;
-}
-.todoListEntries{
-    background-color: #f5db67;
-    margin-left: 40%;
-    margin-right: 40%;
-    padding-top: 10px;
-}
+
 ul{
     list-style-type: circle;
     text-align: left;
   }
 
-button{
+  button{
     color: white;
     border-radius: 4px;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
 }
 
-.submitTodoItemButton{
-    background: rgb(66, 184, 221);
-    color: white;
+input[type=text] {
+    padding: 8px;
+    border: 2px solid #eee;
+    border-radius:10px;
+    width: 18%;
+    margin-right: 5%;
+    margin-left: 5%;
   }
 
-.clearTodoItemFromListButton{
+  .red-text {
+    color: red;
+  }
+  .thick-green-border{
+    border-width: 10px;
+    border-color: green;
+    border-style: solid;
+    border-radius: 30%;
+  }
+.todo-item-form{
+    background-color: cadetblue;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.todo-item-text-label{
+    font-size: x-large;
+}
+.todo-list-entries{
+    background-color: #f5db67;
+    margin-left: 40%;
+    margin-right: 40%;
+    padding-top: 10px;
+    font-family: 'Reenie Beanie', cursive;
+    border-color: red;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 10px;
+}
+
+.submit-todo-item-button{
+    background: rgb(66, 184, 221);
+    color: white;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  }
+
+.clear-todo-item-from-list-button{
     background: rgb(255, 1, 1);
     float: right;
   }
-.todoListItemDoneButton{
+.todo-list-item-done-button{
     background: #9090a3;
     float: right;
 }
-.exportTodoListButton{
+.export-todo-list-button{
     background: #8986d9;
     margin-bottom: 5%;
 }
 
-.clearTodoListButton{
+.clear-todo-list-button{
     background: rgb(202, 60, 60);
     margin-top: 5%;
     margin-bottom: 5%;

@@ -5,26 +5,31 @@
         <meta name="author" content="Luke McConnell">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>To-Do List</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
         <script src="todo_list.js"></script>
+
     </head>
 <body>
     <header>
-        <h1 class="title">To-Do List</h1>
+        <h1 class="title red-text">To-Do List Maker</h1>
     </header>
     
-    <div class="todoItemForm">
-        <label class="todoItemTextLabel" for="todoItemTextBox" >TODO:</label>
-        <input type="text" id="todoItemTextBox" onfocus="this.value=''" value="Enter an item here" onkeypress="submitWithReturn(event)">
-        <input type="submit" class="submitTodoItemButton" onclick="getTodoItem();document.getElementById('todoItemTextBox').value = '';">
+    <div class="todo-item-form thick-green-border">
+        <label class="todo-item-text-label" for="todoItemTextBox" ></label>
+        <input type="text" id="todoItemTextBox" onfocus="this.value=''" value="Type here; Click Submit or Press Return" onkeypress="submitWithReturn(event)">
+        <input type="submit" class="submit-todo-item-button" onclick="getTodoItem();document.getElementById('todoItemTextBox').value = '';">
     </div>
-    <div class="todoListEntries">
-        <h3>Items:</h3><hr><hr>
+    <div class="todo-list-entries">
+        <h3>To-do:</h3><hr><hr>
         <ul id="todoItemList">
         </ul>
         <hr>
-        <button class="exportTodoListButton" type="button" onclick="exportTodoList()">Download List</button><br>
-        <button class="clearTodoListButton" type="button" onclick="clearTodoList()">Clear List</button>
+        <button class="export-todo-list-button" type="button" onclick="exportTodoList()">Download List</button><br>
+        <button class="clear-todo-list-button" type="button" onclick="clearTodoList()">Clear List</button>
     </div>
     
         
