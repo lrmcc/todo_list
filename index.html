@@ -9,20 +9,25 @@
         <script src="todo_list.js"></script>
     </head>
 <body>
-    <h1>To-Do List</h1>
-    <form>
-        <label for="todoItem">Enter a To-Do Item:</label>
-        <input type="text" id="todoItem" name="todoItem">
-        <button type="button" onclick="getTodoItem()">Submit</button>
-    </form>
-    <p >To-do Items:</p>
-    <ul>
-
-    </ul>
-    <ul id="todoItemList">
-    </ul>
-    <br>
-    <button type="button" onclick="clearTodoItem()">Clear List</button>
+    <header>
+        <h1 class="title">To-Do List</h1>
+    </header>
+    
+    <div class="todoItemForm">
+        <form action="">
+        <label for="todoItemTextBox">Enter a To-Do Item:</label>
+        <input type="text" id="todoItemTextBox" name="todoItemTextBox">
+        <button type="button" class="submitTodoItemButton" onclick="getTodoItem()">Submit</button>
+        <button class="clearTodoListButton" type="button" onclick="clearTodoList()">Clear List</button>
+        <br><br>
+        </form>
+    </div>
+    <div class="todoListEntries">
+        <p>Items:</p>
+        <ul id="todoItemList">
+        </ul>
+    </div>
+    
         
         
 

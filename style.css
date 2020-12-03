@@ -1,4 +1,47 @@
+html,body {
+	margin:0;
+	padding:0;
+    height:100%;
+    font-family: Georgia, serif;
+}
+
+.title{
+    background-color: bisque;
+    font-family: Georgia, serif;
+}    
 body{
     background-color: #34eb9e;
     text-align: center;
 }
+.todoItemForm{
+    background-color: cadetblue;
+}
+.todoListEntries{
+    background-color: cornflowerblue;
+    margin-left: 25%;
+    margin-right: 40%;
+    width: 50%;
+    height: 50%;
+}
+ul{
+    list-style-type: circle;
+    text-align: left;
+  }
+
+button{
+     color: white;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+.clearTodoListButton{
+    background: rgb(202, 60, 60);
+    border-radius: 1px;
+  }
+
+.clearTodoItem{
+    background: rgb(255, 1, 1);
+  }
+
+.submitTodoItemButton{
+    background: rgb(66, 184, 221);
+  }
